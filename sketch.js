@@ -45,7 +45,7 @@ function setup(){
  
   chain=new SlingShot(ball.body,{x:200,y:730})
 
-  ground=new Ground(635,990,1250,15);
+  ground=new Ground(635,998,1300,20);
   ground2=new Ground(1995,500,20,2000);
   
 
