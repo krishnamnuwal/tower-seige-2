@@ -15,7 +15,7 @@ class stoneBox{
         World.add(world,this.body);
     }
     display(){
-        if(this.body.speed<20){
+        if(this.body.speed<15){
         var pos=this.body.position;
         image(this.image,pos.x,pos.y,this.width,this.height);
 
