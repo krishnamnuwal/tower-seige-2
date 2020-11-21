@@ -38,10 +38,11 @@ class SlingShot{
                 image(this.sling3,pointA.x -50, pointA.y -5,15,30);
             }
             else{
-                strokeWeight(3);
+                strokeWeight(4);
                 line(pointA.x + 25, pointA.y, pointB.x -20, pointB.y);
                 line(pointA.x + 25, pointA.y, pointB.x + 30, pointB.y - 0);
-              
+                 image(this.sling3,pointA.x + 45, pointA.y -10,15,30);
+
             }
            
             
