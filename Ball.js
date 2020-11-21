@@ -5,7 +5,7 @@ class Ball {
             density:1.8,
             friction:1,
         }
-        this.body=Matter.Bodies.circle(x,y,100,option)
+        this.body=Matter.Bodies.circle(x,y,80,option)
         this.radius=100;
         this.color="blue"
         this.image=loadImage("smoke.png")
@@ -21,7 +21,7 @@ class Ball {
         translate(pos.x,pos.y);
         rotate(angle);
         ellipseMode(CENTER);
-        ellipse(0,0,100);
+        ellipse(0,0,80);
         pop();
      /*   if(this.body.velocity.x>15 && this.body.position.x>200 ){
             var position=[this.body.position.x,this.body.position.y]

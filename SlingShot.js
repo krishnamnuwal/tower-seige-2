@@ -3,7 +3,7 @@ class SlingShot{
         var option ={
             bodyA:bodyA,
             pointB:pointB,
-            stiffeness:0.04,
+            stiffness:0.08,
             length:20
         }
         this.pointB = pointB
@@ -30,17 +30,17 @@ class SlingShot{
             var pointB = this.pointB;
             push();
             
-            stroke("black");
+            stroke(48,22,8);
             if(pointA.x < 220) {
                 strokeWeight(7);
-                line(pointA.x - 45, pointA.y+10, pointB.x -20, pointB.y);
-                line(pointA.x - 45, pointA.y+10, pointB.x + 35, pointB.y +10);
+                line(pointA.x - 45, pointA.y+20, pointB.x -35, pointB.y+20);
+                line(pointA.x - 45, pointA.y+20, pointB.x + 35, pointB.y +20);
                 image(this.sling3,pointA.x -50, pointA.y -5,15,30);
             }
             else{
                 strokeWeight(3);
-                line(pointA.x + 25, pointA.y, pointB.x -10, pointB.y);
-                line(pointA.x + 25, pointA.y, pointB.x + 30, pointB.y - 3);
+                line(pointA.x + 25, pointA.y, pointB.x -20, pointB.y);
+                line(pointA.x + 25, pointA.y, pointB.x + 30, pointB.y - 0);
               
             }
            

@@ -6,7 +6,7 @@ const Constraint=Matter.Constraint
 var bgImg
 var gbox,sBox,mBox,log,bBox,ball,chain,ground;
 var gameState="onChain"
-var chance=5;
+var chance=20;
 function preload(){
 bgImg=loadImage("bg1.jpg")
 }
@@ -41,9 +41,9 @@ function setup(){
   mBox14=new medBox(1600,350,160,160,PI/7)
  
 
-  ball=new Ball(200,730,PI/7);
+  ball=new Ball(200,740,PI/7);
  
-  chain=new SlingShot(ball.body,{x:200,y:730})
+  chain=new SlingShot(ball.body,{x:200,y:740})
 
   ground=new Ground(635,998,1300,20);
   ground2=new Ground(1995,500,20,2000);
@@ -62,7 +62,7 @@ function draw(){
   text("PRESS SPACE TO GET A ONE MORE CHANCE",700,100);
   text("STONE REQUIRE MORE HITS TO VANISH",750,140);
   textSize(32);
-  fill("blue");
+  fill("black");
     text("CHANCE LEFT:"+chance,250,150);
  
   
