@@ -87,10 +87,11 @@ function mouseDragged(){
 
 function keyPressed(){
   if((keyCode===32)&&gameState==="launched"){
-    Matter.Body.setPosition(ball.body,{x:200,y:730})
+    Matter.Body.setPosition(ball.body,{x:200,y:740})
     chain.attach(ball.body)
     gameState="onChain"
     chance=chance-1;
+    Matter.Body.setVelocity(ball.body,{x:0,y:0})
   }
 }
 
